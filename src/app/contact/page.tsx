@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Hero from "@/components/Hero";
-import EstimateForm from "@/components/EstimateForm";
+import GHLForm from "@/components/GHLForm";
 
 export const metadata: Metadata = {
   title: "Contact Us — Free Estimate for Tree Service & Landscaping | ABC Lawn & Tree",
@@ -30,9 +30,15 @@ export default function ContactPage() {
       <section className="py-16 md:py-20">
         <div className="max-w-6xl mx-auto px-6">
           <div className="grid lg:grid-cols-5 gap-10">
-            {/* Left: Estimate Form */}
+            {/* Left: Contact Form (Go High Level) */}
             <div className="lg:col-span-3">
-              <EstimateForm />
+              <div className="bg-white rounded-xl border border-border shadow-sm p-6">
+                <h2 className="text-xl font-bold text-charcoal mb-4">Request a Free Estimate</h2>
+                <GHLForm
+                  formId="1YzGKCWn59XKN6XL3lR8"
+                  height={706}
+                />
+              </div>
             </div>
 
             {/* Right: Contact Info Sidebar */}
