@@ -33,7 +33,6 @@ const jsonLd = {
   ],
   priceRange: "$$",
   image: "",
-  aggregateRating: { "@type": "AggregateRating", ratingValue: "4.9", reviewCount: "87" },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

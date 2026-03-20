@@ -1,201 +1,30 @@
-"use client";
-
-import { useState } from "react";
 import Hero from "@/components/Hero";
 
-type Category = "all" | "tree-work" | "landscaping" | "hardscape";
-
-interface Project {
-  id: number;
-  title: string;
-  description: string;
-  category: "tree-work" | "landscaping" | "hardscape";
-  image: string;
-}
-
-const projects: Project[] = [
-  // Tree Work
-  {
-    id: 1,
-    title: "Large Oak Removal",
-    description: "Safely removed a 70-foot oak threatening a home in Fuquay-Varina.",
-    category: "tree-work",
-    image: "https://images.unsplash.com/photo-1628697579400-6ff003101a3d?w=800&h=600&fit=crop",
-  },
-  {
-    id: 2,
-    title: "Storm Damage Cleanup",
-    description: "Emergency pine removal after severe weather in Holly Springs.",
-    category: "tree-work",
-    image: "https://images.unsplash.com/photo-1645430786171-362e053dcf6f?w=800&h=600&fit=crop",
-  },
-  {
-    id: 3,
-    title: "Canopy Pruning",
-    description: "Crown thinning on mature maples to restore light to a Willow Springs yard.",
-    category: "tree-work",
-    image: "https://images.unsplash.com/photo-1658615324653-00fbdaee8a3f?w=800&h=600&fit=crop",
-  },
-  {
-    id: 4,
-    title: "Multi-Tree Lot Clearing",
-    description: "Cleared 15 pines for new construction in Angier.",
-    category: "tree-work",
-    image: "https://images.unsplash.com/photo-1487873606941-29660d418953?w=800&h=600&fit=crop",
-  },
-  // Landscaping
-  {
-    id: 5,
-    title: "Front Yard Makeover",
-    description: "Complete landscape redesign with native plantings in Apex.",
-    category: "landscaping",
-    image: "https://images.unsplash.com/photo-1626788570296-a6565dbf19b4?w=800&h=600&fit=crop",
-  },
-  {
-    id: 6,
-    title: "Seasonal Color Installation",
-    description: "Annual flower bed installation for a Garner commercial property.",
-    category: "landscaping",
-    image: "https://images.unsplash.com/photo-1589321084815-4e5f1740cbc6?w=800&h=600&fit=crop",
-  },
-  {
-    id: 7,
-    title: "Lawn Renovation",
-    description: "Full lawn tear-out and fescue installation in Holly Springs.",
-    category: "landscaping",
-    image: "https://images.unsplash.com/photo-1626788570296-a6565dbf19b4?w=800&h=600&fit=crop",
-  },
-  {
-    id: 8,
-    title: "Foundation Planting",
-    description: "Shrub and perennial design for a new build in Fuquay-Varina.",
-    category: "landscaping",
-    image: "https://images.unsplash.com/photo-1589321084815-4e5f1740cbc6?w=800&h=600&fit=crop",
-  },
-  // Hardscape
-  {
-    id: 9,
-    title: "Paver Patio",
-    description: "600 sq ft paver patio with seating wall in Willow Springs.",
-    category: "hardscape",
-    image: "https://images.unsplash.com/photo-1582586729982-43ce0902f1f1?w=800&h=600&fit=crop",
-  },
-  {
-    id: 10,
-    title: "Retaining Wall",
-    description: "Natural stone retaining wall to manage slope erosion in Apex.",
-    category: "hardscape",
-    image: "https://images.unsplash.com/photo-1638107982729-59f464ea6b52?w=800&h=600&fit=crop",
-  },
-  {
-    id: 11,
-    title: "Outdoor Fire Pit",
-    description: "Custom stone fire pit and surrounding patio in Garner.",
-    category: "hardscape",
-    image: "https://images.unsplash.com/photo-1757851704368-3ae8d337943d?w=800&h=600&fit=crop",
-  },
-  {
-    id: 12,
-    title: "Walkway & Steps",
-    description: "Flagstone walkway with landscape lighting in Fuquay-Varina.",
-    category: "hardscape",
-    image: "https://images.unsplash.com/photo-1596086221164-c8a4cac55e27?w=800&h=600&fit=crop",
-  },
-];
-
-const filters: { label: string; value: Category }[] = [
-  { label: "All", value: "all" },
-  { label: "Tree Work", value: "tree-work" },
-  { label: "Landscaping", value: "landscaping" },
-  { label: "Hardscape", value: "hardscape" },
-];
-
-const categoryLabels: Record<string, string> = {
-  "tree-work": "Tree Work",
-  landscaping: "Landscaping",
-  hardscape: "Hardscape",
-};
-
-const badgeColors: Record<string, string> = {
-  "tree-work": "bg-emerald-100 text-emerald-800",
-  landscaping: "bg-lime-100 text-lime-800",
-  hardscape: "bg-amber-100 text-amber-800",
-};
-
 export default function GalleryPage() {
-  const [active, setActive] = useState<Category>("all");
-
-  const filtered =
-    active === "all"
-      ? projects
-      : projects.filter((p) => p.category === active);
-
   return (
     <>
       <Hero
         title="Our Work"
-        subtitle="Browse real projects completed across Southern Wake County — tree removal, landscaping, and hardscape work by the ABC Lawn & Tree crew."
+        subtitle="See what ABC Lawn & Tree can do for your property across Southern Wake County."
       />
 
-      <section className="py-16 md:py-20">
-        <div className="max-w-6xl mx-auto px-6">
-          {/* Filter Buttons */}
-          <div className="flex flex-wrap justify-center gap-3 mb-12">
-            {filters.map((f) => (
-              <button
-                key={f.value}
-                onClick={() => setActive(f.value)}
-                className={`px-5 py-2.5 rounded-lg font-semibold text-sm transition ${
-                  active === f.value
-                    ? "bg-primary text-white shadow-md"
-                    : "bg-cream text-charcoal-light hover:bg-border"
-                }`}
-              >
-                {f.label}
-              </button>
-            ))}
-          </div>
-
-          {/* Project Grid */}
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {filtered.map((project) => (
-              <div
-                key={project.id}
-                className="bg-white rounded-xl border border-border shadow-sm overflow-hidden hover:shadow-md transition"
-              >
-                {/* Project Image */}
-                <img src={project.image} alt={project.title} className="h-48 w-full object-cover" loading="lazy" />
-                {/* Card Body */}
-                <div className="p-5">
-                  <span
-                    className={`inline-block text-xs font-bold px-2.5 py-1 rounded-full mb-3 ${badgeColors[project.category]}`}
-                  >
-                    {categoryLabels[project.category]}
-                  </span>
-                  <h3 className="text-lg font-bold text-charcoal mb-1">
-                    {project.title}
-                  </h3>
-                  <p className="text-charcoal-light text-[15px] leading-relaxed">
-                    {project.description}
-                  </p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* CTA */}
-      <section className="pb-16 md:pb-20">
+      <section className="py-16 md:py-24">
         <div className="max-w-3xl mx-auto px-6 text-center">
-          <div className="bg-primary/5 border border-primary/15 rounded-xl p-8 md:p-10">
+          <div className="bg-primary/5 border border-primary/15 rounded-xl p-8 md:p-12">
+            <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6">
+              <svg className="w-8 h-8 text-primary" fill="none" stroke="currentColor" strokeWidth={1.5} viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" d="M6.827 6.175A2.31 2.31 0 015.186 7.23c-.38.054-.757.112-1.134.175C2.999 7.58 2.25 8.507 2.25 9.574V18a2.25 2.25 0 002.25 2.25h15A2.25 2.25 0 0021.75 18V9.574c0-1.067-.75-1.994-1.802-2.169a47.865 47.865 0 00-1.134-.175 2.31 2.31 0 01-1.64-1.055l-.822-1.316a2.192 2.192 0 00-1.736-1.039 48.774 48.774 0 00-5.232 0 2.192 2.192 0 00-1.736 1.039l-.821 1.316z" />
+                <path strokeLinecap="round" strokeLinejoin="round" d="M16.5 12.75a4.5 4.5 0 11-9 0 4.5 4.5 0 019 0z" />
+              </svg>
+            </div>
             <h2 className="text-2xl md:text-3xl font-bold text-charcoal mb-3">
-              Ready to Transform Your Property?
+              Photo Gallery Coming Soon
             </h2>
-            <p className="text-charcoal-light mb-6 max-w-xl mx-auto">
-              Every project in our gallery started with a free estimate. Let&apos;s
-              talk about what ABC Lawn &amp; Tree can do for your home or
-              business in Southern Wake County.
+            <p className="text-charcoal-light mb-6 max-w-xl mx-auto leading-relaxed">
+              We&apos;re building out our project gallery with real photos from jobs
+              across Fuquay-Varina, Holly Springs, Apex, Garner, and Angier.
+              In the meantime, give us a call and we&apos;ll be happy to share
+              examples of our work.
             </p>
             <div className="flex flex-col sm:flex-row gap-3 justify-center">
               <a

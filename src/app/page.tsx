@@ -91,23 +91,7 @@ const values = [
   },
 ];
 
-const reviews = [
-  {
-    name: "Sarah M.",
-    rating: 5,
-    text: "ABC removed two massive oaks that were threatening our roof. Professional crew, fair price, and the yard looked perfect when they left. Highly recommend!",
-  },
-  {
-    name: "David K.",
-    rating: 5,
-    text: "Called them for emergency storm damage on a Sunday and they were out within two hours. Saved our fence and cleaned up everything. Outstanding service.",
-  },
-  {
-    name: "Jennifer L.",
-    rating: 5,
-    text: "We&apos;ve used ABC for tree trimming and landscape work for three years now. Always on time, always professional, and the results speak for themselves.",
-  },
-];
+const reviews: { name: string; rating: number; text: string }[] = [];
 
 const serviceAreas = [
   "Fuquay-Varina",
@@ -215,51 +199,34 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Google Reviews */}
+      {/* Why Choose Us */}
       <section className="py-20 bg-white">
-        <div className="max-w-6xl mx-auto px-6">
-          <div className="text-center mb-14">
-            <div className="flex items-center justify-center gap-1 mb-3">
-              {[...Array(5)].map((_, i) => (
-                <svg
-                  key={i}
-                  className="w-7 h-7 text-accent"
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
-                >
-                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                </svg>
-              ))}
-            </div>
-            <h2 className="text-3xl md:text-4xl font-bold text-charcoal mb-1">
-              4.9 out of 5 Stars
-            </h2>
-            <p className="text-charcoal-light">87 reviews on Google</p>
-          </div>
+        <div className="max-w-4xl mx-auto px-6 text-center">
+          <h2 className="text-3xl md:text-4xl font-bold text-charcoal mb-10">
+            Why Choose ABC Lawn &amp; Tree
+          </h2>
           <div className="grid md:grid-cols-3 gap-6">
-            {reviews.map((r) => (
-              <div
-                key={r.name}
-                className="bg-cream rounded-xl p-6 border border-border"
-              >
-                <div className="flex items-center gap-1 mb-3">
-                  {[...Array(r.rating)].map((_, i) => (
-                    <svg
-                      key={i}
-                      className="w-4 h-4 text-accent"
-                      fill="currentColor"
-                      viewBox="0 0 20 20"
-                    >
-                      <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                    </svg>
-                  ))}
-                </div>
-                <p className="text-[15px] text-charcoal-light leading-relaxed mb-4">
-                  &ldquo;{r.text}&rdquo;
-                </p>
-                <p className="text-sm font-bold text-charcoal">{r.name}</p>
-              </div>
-            ))}
+            <div className="bg-cream rounded-xl p-6 border border-border">
+              <div className="text-3xl font-bold text-primary mb-2">25+</div>
+              <h3 className="font-bold text-charcoal mb-2">Years of Experience</h3>
+              <p className="text-[15px] text-charcoal-light leading-relaxed">
+                Family-owned since 1998. We know Southern Wake County&apos;s trees, soil, and weather.
+              </p>
+            </div>
+            <div className="bg-cream rounded-xl p-6 border border-border">
+              <div className="text-3xl font-bold text-primary mb-2">100%</div>
+              <h3 className="font-bold text-charcoal mb-2">Licensed &amp; Insured</h3>
+              <p className="text-[15px] text-charcoal-light leading-relaxed">
+                Full liability and workers&apos; comp coverage on every job. Your property is protected.
+              </p>
+            </div>
+            <div className="bg-cream rounded-xl p-6 border border-border">
+              <div className="text-3xl font-bold text-primary mb-2">Free</div>
+              <h3 className="font-bold text-charcoal mb-2">Estimates</h3>
+              <p className="text-[15px] text-charcoal-light leading-relaxed">
+                No-obligation quotes usually delivered within 24 hours. No surprises, no hidden fees.
+              </p>
+            </div>
           </div>
         </div>
       </section>

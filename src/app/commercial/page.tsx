@@ -221,7 +221,7 @@ export default function CommercialPage() {
             {[
               { stat: "25+", label: "Years in Business" },
               { stat: "100%", label: "Licensed & Insured" },
-              { stat: "4.9", label: "Google Rating" },
+              { stat: "Local", label: "Willow Springs Based" },
               { stat: "1", label: "Vendor for Everything" },
             ].map((item) => (
               <div key={item.label} className="p-5">

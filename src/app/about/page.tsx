@@ -13,9 +13,9 @@ export const metadata: Metadata = {
 
 const stats = [
   { value: "25+", label: "Years in Business" },
-  { value: "3,000+", label: "Jobs Completed" },
-  { value: "4.9★", label: "Average Rating" },
-  { value: "100%", label: "Insured" },
+  { value: "Family", label: "Owned & Operated" },
+  { value: "Local", label: "Willow Springs Based" },
+  { value: "100%", label: "Licensed & Insured" },
 ];
 
 const values = [
@@ -104,12 +104,8 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Team Photo Placeholder */}
-      <section className="py-16 md:py-20">
-        <div className="max-w-4xl mx-auto px-6">
-          <img src="https://images.unsplash.com/photo-1626828476637-5bd713ef9f22?w=1200&h=500&fit=crop" alt="The ABC Lawn & Tree crew at work" className="rounded-xl h-80 w-full object-cover" loading="lazy" />
-        </div>
-      </section>
+      {/* Spacer */}
+      <section className="py-4" />
 
       {/* Values & Credentials */}
       <section className="py-16 md:py-20 bg-cream">

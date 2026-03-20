@@ -188,46 +188,30 @@ export default function TreeRemovalPage() {
         </div>
       </section>
 
-      {/* Before / After Grid */}
+      {/* Before / After CTA */}
       <section className="py-20 bg-white">
-        <div className="max-w-6xl mx-auto px-6">
-          <h2 className="text-3xl font-bold text-charcoal text-center mb-10">
-            Before &amp; After
+        <div className="max-w-3xl mx-auto px-6 text-center">
+          <h2 className="text-3xl font-bold text-charcoal mb-4">
+            Want to See Our Work?
           </h2>
-          <div className="grid md:grid-cols-3 gap-8">
-            {/* Project 1 */}
-            <div className="space-y-3">
-              <div>
-                <img src="https://images.unsplash.com/photo-1645430786171-362e053dcf6f?w=600&h=450&fit=crop" alt="Before — Project 1" className="aspect-[4/3] rounded-lg object-cover w-full" loading="lazy" />
-                <p className="text-xs text-charcoal-light mt-1 text-center">Before</p>
-              </div>
-              <div>
-                <img src="https://images.unsplash.com/photo-1626788570296-a6565dbf19b4?w=600&h=450&fit=crop" alt="After — Project 1" className="aspect-[4/3] rounded-lg object-cover w-full" loading="lazy" />
-                <p className="text-xs text-primary mt-1 text-center">After</p>
-              </div>
-            </div>
-            {/* Project 2 */}
-            <div className="space-y-3">
-              <div>
-                <img src="https://images.unsplash.com/photo-1591497108596-436c1a1a5c8e?w=600&h=450&fit=crop" alt="Before — Project 2" className="aspect-[4/3] rounded-lg object-cover w-full" loading="lazy" />
-                <p className="text-xs text-charcoal-light mt-1 text-center">Before</p>
-              </div>
-              <div>
-                <img src="https://images.unsplash.com/photo-1589321084815-4e5f1740cbc6?w=600&h=450&fit=crop" alt="After — Project 2" className="aspect-[4/3] rounded-lg object-cover w-full" loading="lazy" />
-                <p className="text-xs text-primary mt-1 text-center">After</p>
-              </div>
-            </div>
-            {/* Project 3 */}
-            <div className="space-y-3">
-              <div>
-                <img src="https://images.unsplash.com/photo-1487873606941-29660d418953?w=600&h=450&fit=crop" alt="Before — Project 3" className="aspect-[4/3] rounded-lg object-cover w-full" loading="lazy" />
-                <p className="text-xs text-charcoal-light mt-1 text-center">Before</p>
-              </div>
-              <div>
-                <img src="https://images.unsplash.com/photo-1626788570296-a6565dbf19b4?w=600&h=450&fit=crop" alt="After — Project 3" className="aspect-[4/3] rounded-lg object-cover w-full" loading="lazy" />
-                <p className="text-xs text-primary mt-1 text-center">After</p>
-              </div>
-            </div>
+          <p className="text-charcoal-light leading-relaxed mb-6">
+            We&apos;d love to show you examples of completed tree removals in your area.
+            Give us a call or request an estimate and we&apos;ll share photos of jobs
+            similar to yours.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-3 justify-center">
+            <a
+              href="/contact"
+              className="bg-accent hover:bg-accent-dark text-white px-7 py-3.5 rounded-lg font-bold text-sm transition shadow-lg"
+            >
+              Request an Estimate
+            </a>
+            <a
+              href="tel:9196060774"
+              className="border-2 border-primary/20 hover:border-primary/40 text-primary px-7 py-3.5 rounded-lg font-bold text-sm transition"
+            >
+              Call (919) 606-0774
+            </a>
           </div>
         </div>
       </section>

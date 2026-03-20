@@ -184,25 +184,29 @@ export default function TreeTrimmingPage() {
         </div>
       </section>
 
-      {/* Before / After Grid */}
+      {/* See Our Work CTA */}
       <section className="py-20 bg-cream">
-        <div className="max-w-6xl mx-auto px-6">
-          <h2 className="text-3xl font-bold text-charcoal text-center mb-10">
-            Before &amp; After
+        <div className="max-w-3xl mx-auto px-6 text-center">
+          <h2 className="text-3xl font-bold text-charcoal mb-4">
+            Want to See Our Work?
           </h2>
-          <div className="grid md:grid-cols-3 gap-8">
-            <div className="space-y-3">
-              <img src="https://images.unsplash.com/photo-1658615324653-00fbdaee8a3f?w=600&h=450&fit=crop" alt="Before — Project 1" className="aspect-[4/3] rounded-lg object-cover w-full" loading="lazy" />
-              <img src="https://images.unsplash.com/photo-1487873606941-29660d418953?w=600&h=450&fit=crop" alt="After — Project 1" className="aspect-[4/3] rounded-lg object-cover w-full" loading="lazy" />
-            </div>
-            <div className="space-y-3">
-              <img src="https://images.unsplash.com/photo-1658615324653-00fbdaee8a3f?w=600&h=450&fit=crop" alt="Before — Project 2" className="aspect-[4/3] rounded-lg object-cover w-full" loading="lazy" />
-              <img src="https://images.unsplash.com/photo-1626788570296-a6565dbf19b4?w=600&h=450&fit=crop" alt="After — Project 2" className="aspect-[4/3] rounded-lg object-cover w-full" loading="lazy" />
-            </div>
-            <div className="space-y-3">
-              <img src="https://images.unsplash.com/photo-1487873606941-29660d418953?w=600&h=450&fit=crop" alt="Before — Project 3" className="aspect-[4/3] rounded-lg object-cover w-full" loading="lazy" />
-              <img src="https://images.unsplash.com/photo-1589321084815-4e5f1740cbc6?w=600&h=450&fit=crop" alt="After — Project 3" className="aspect-[4/3] rounded-lg object-cover w-full" loading="lazy" />
-            </div>
+          <p className="text-charcoal-light leading-relaxed mb-6">
+            We&apos;d love to show you examples of completed trimming and pruning jobs in your area.
+            Give us a call or request an estimate and we&apos;ll share photos of similar projects.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-3 justify-center">
+            <a
+              href="/contact"
+              className="bg-accent hover:bg-accent-dark text-white px-7 py-3.5 rounded-lg font-bold text-sm transition shadow-lg"
+            >
+              Request an Estimate
+            </a>
+            <a
+              href="tel:9196060774"
+              className="border-2 border-primary/20 hover:border-primary/40 text-primary px-7 py-3.5 rounded-lg font-bold text-sm transition"
+            >
+              Call (919) 606-0774
+            </a>
           </div>
         </div>
       </section>

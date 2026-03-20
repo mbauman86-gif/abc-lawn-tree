@@ -74,14 +74,7 @@ const services = [
   },
 ];
 
-const galleryItems = [
-  { label: "Paver Patio", image: "https://images.unsplash.com/photo-1582586729982-43ce0902f1f1?w=600&h=450&fit=crop" },
-  { label: "Retaining Wall", image: "https://images.unsplash.com/photo-1638107982729-59f464ea6b52?w=600&h=450&fit=crop" },
-  { label: "Stone Walkway", image: "https://images.unsplash.com/photo-1596086221164-c8a4cac55e27?w=600&h=450&fit=crop" },
-  { label: "Fire Pit", image: "https://images.unsplash.com/photo-1757851704368-3ae8d337943d?w=600&h=450&fit=crop" },
-  { label: "Outdoor Kitchen", image: "https://images.unsplash.com/photo-1622122123829-e0490a288d04?w=600&h=450&fit=crop" },
-  { label: "Drainage Project", image: "https://images.unsplash.com/photo-1589321084815-4e5f1740cbc6?w=600&h=450&fit=crop" },
-];
+const galleryItems: string[] = [];
 
 export default function HardscapePage() {
   return (
@@ -134,7 +127,7 @@ export default function HardscapePage() {
               { stat: "25+", label: "Years of Experience" },
               { stat: "100%", label: "Licensed & Insured" },
               { stat: "Free", label: "Design Consultations" },
-              { stat: "5-Star", label: "Google Reviews" },
+              { stat: "Local", label: "Willow Springs Based" },
             ].map((item) => (
               <div key={item.label} className="p-5">
                 <div className="text-3xl font-bold text-primary mb-1">{item.stat}</div>
@@ -145,31 +138,30 @@ export default function HardscapePage() {
         </div>
       </section>
 
-      {/* Project Gallery Placeholder */}
+      {/* See Our Work CTA */}
       <section className="bg-cream py-16 md:py-24">
-        <div className="max-w-6xl mx-auto px-6">
-          <div className="text-center mb-10">
-            <h2 className="text-3xl font-bold text-charcoal mb-4">
-              Project Gallery
-            </h2>
-            <p className="text-charcoal-light max-w-2xl mx-auto">
-              Browse recent hardscape projects completed for homeowners across Apex,
-              Fuquay-Varina, Willow Springs, and Holly Springs.
-            </p>
-          </div>
-
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {galleryItems.map((item) => (
-              <div
-                key={item.label}
-                className="rounded-xl aspect-[4/3] overflow-hidden border border-border relative"
-              >
-                <img src={item.image} alt={item.label} className="w-full h-full object-cover" loading="lazy" />
-                <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/60 to-transparent p-4">
-                  <span className="text-white font-semibold text-sm">{item.label}</span>
-                </div>
-              </div>
-            ))}
+        <div className="max-w-3xl mx-auto px-6 text-center">
+          <h2 className="text-3xl font-bold text-charcoal mb-4">
+            Want to See Our Work?
+          </h2>
+          <p className="text-charcoal-light leading-relaxed mb-6">
+            We&apos;d love to show you examples of patios, retaining walls, fire pits, and
+            walkways we&apos;ve built across Southern Wake County. Give us a call or request
+            an estimate and we&apos;ll share photos of projects similar to yours.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-3 justify-center">
+            <a
+              href="/contact"
+              className="bg-accent hover:bg-accent-dark text-white px-7 py-3.5 rounded-lg font-bold text-sm transition shadow-lg"
+            >
+              Request an Estimate
+            </a>
+            <a
+              href="tel:9196060774"
+              className="border-2 border-primary/20 hover:border-primary/40 text-primary px-7 py-3.5 rounded-lg font-bold text-sm transition"
+            >
+              Call (919) 606-0774
+            </a>
           </div>
         </div>
       </section>
