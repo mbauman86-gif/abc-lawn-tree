@@ -66,10 +66,10 @@ export default function EmergencyTreeServicePage() {
             We respond 24 hours a day, 7 days a week, including holidays.
           </p>
           <a
-            href="tel:9196060774"
+            href="tel:9196061130"
             className="inline-block text-4xl md:text-6xl font-extrabold text-white hover:text-white/75 transition"
           >
-            (919) 606-0774
+            (919) 606-1130
           </a>
         </div>
       </section>
@@ -179,10 +179,10 @@ export default function EmergencyTreeServicePage() {
                     For fastest response, call us directly:
                   </p>
                   <a
-                    href="tel:9196060774"
+                    href="tel:9196061130"
                     className="text-2xl font-extrabold text-white hover:text-white/75 transition"
                   >
-                    (919) 606-0774
+                    (919) 606-1130
                   </a>
                 </div>
                 <EstimateForm
@@ -212,10 +212,10 @@ export default function EmergencyTreeServicePage() {
             Don&apos;t Wait — Call Now for Emergency Tree Service
           </h2>
           <a
-            href="tel:9196060774"
+            href="tel:9196061130"
             className="inline-block bg-white text-emergency hover:bg-emergency-light px-10 py-4 rounded-lg font-extrabold text-lg transition shadow-lg"
           >
-            (919) 606-0774
+            (919) 606-1130
           </a>
         </div>
       </section>

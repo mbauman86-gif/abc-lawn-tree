@@ -23,7 +23,7 @@ export default function EstimateForm({ service = "", heading = "Get Your Free Es
       <div className="bg-primary/5 border border-primary/20 rounded-xl p-10 text-center">
         <svg className="w-14 h-14 text-primary mx-auto mb-4" fill="none" stroke="currentColor" strokeWidth={1.5} viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
         <h3 className="text-2xl font-bold text-primary mb-2">Thank You!</h3>
-        <p className="text-charcoal">We&apos;ll get back to you within 24 hours. For immediate help, call <a href="tel:9196060774" className="text-primary font-bold hover:underline">(919) 606-0774</a>.</p>
+        <p className="text-charcoal">We&apos;ll get back to you within 24 hours. For immediate help, call <a href="tel:9196061130" className="text-primary font-bold hover:underline">(919) 606-1130</a>.</p>
       </div>
     );
   }
@@ -78,7 +78,7 @@ export default function EstimateForm({ service = "", heading = "Get Your Free Es
         <button type="submit" className="w-full bg-primary hover:bg-primary-light text-white py-4 rounded-lg font-bold text-lg transition shadow-md hover:shadow-lg">
           Request Free Estimate
         </button>
-        <p className="text-sm text-charcoal-light text-center">Or call now: <a href="tel:9196060774" className="text-primary font-bold">(919) 606-0774</a></p>
+        <p className="text-sm text-charcoal-light text-center">Or call now: <a href="tel:9196061130" className="text-primary font-bold">(919) 606-1130</a></p>
       </form>
     </div>
   );

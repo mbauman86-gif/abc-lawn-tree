@@ -10,7 +10,7 @@ export default function Hero({ title, subtitle, emergency = false }: { title: st
         <p className="text-xl text-white/85 max-w-2xl mx-auto mb-10 leading-relaxed">{subtitle}</p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Link href="/contact" className="bg-accent hover:bg-accent-light text-white px-8 py-4 rounded-lg font-bold text-[17px] transition shadow-lg">Get Free Estimate</Link>
-          <a href="tel:9196060774" className="border-2 border-white/40 hover:border-white text-white px-8 py-4 rounded-lg font-bold text-[17px] transition bg-transparent">Call (919) 606-0774</a>
+          <a href="tel:9196061130" className="border-2 border-white/40 hover:border-white text-white px-8 py-4 rounded-lg font-bold text-[17px] transition bg-transparent">Call (919) 606-1130</a>
         </div>
       </div>
     </section>

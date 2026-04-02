@@ -6,7 +6,7 @@ import EstimateForm from "@/components/EstimateForm";
 export const metadata: Metadata = {
   title: "Irrigation Installation & Maintenance | Southern Wake County NC | ABC Lawn & Tree",
   description:
-    "Irrigation system installation, repair, winterization, and spring startup in Southern Wake County, NC. Serving Willow Springs, Fuquay-Varina, Apex, and Holly Springs. Free estimates. Call (919) 606-0774.",
+    "Irrigation system installation, repair, winterization, and spring startup in Southern Wake County, NC. Serving Willow Springs, Fuquay-Varina, Apex, and Holly Springs. Free estimates. Call (919) 606-1130.",
   keywords:
     "irrigation installation Southern Wake County NC, sprinkler system repair Willow Springs, irrigation winterization Fuquay-Varina, lawn sprinkler Apex NC, irrigation maintenance Wake County",
 };

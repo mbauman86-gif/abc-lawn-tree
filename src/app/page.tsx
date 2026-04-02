@@ -271,10 +271,10 @@ export default function HomePage() {
               Request Free Estimate
             </Link>
             <a
-              href="tel:9196060774"
+              href="tel:9196061130"
               className="border-2 border-white/40 hover:border-white text-white px-8 py-3.5 rounded-lg font-bold text-sm transition"
             >
-              Call (919) 606-0774
+              Call (919) 606-1130
             </a>
           </div>
         </div>

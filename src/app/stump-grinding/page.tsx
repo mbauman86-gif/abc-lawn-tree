@@ -7,7 +7,7 @@ import FAQ from "@/components/FAQ";
 export const metadata: Metadata = {
   title: "Stump Grinding & Removal | Willow Springs NC | ABC Lawn & Tree",
   description:
-    "Professional stump grinding and stump removal in Willow Springs, NC and Southern Wake County. Fast, affordable service with free estimates. Call (919) 606-0774.",
+    "Professional stump grinding and stump removal in Willow Springs, NC and Southern Wake County. Fast, affordable service with free estimates. Call (919) 606-1130.",
   keywords:
     "stump grinding Willow Springs NC, stump removal Willow Springs, stump grinding Southern Wake County, tree stump removal near me, affordable stump grinding Fuquay-Varina",
 };
@@ -135,8 +135,8 @@ export default function StumpGrindingPage() {
                 schedule multiple stumps in a single visit. Pair stump grinding with a
                 tree removal, lawn restoration, or hardscape project and save even
                 more. Call{" "}
-                <a href="tel:9196060774" className="text-primary font-bold hover:underline">
-                  (919) 606-0774
+                <a href="tel:9196061130" className="text-primary font-bold hover:underline">
+                  (919) 606-1130
                 </a>{" "}
                 or fill out the form to get a custom package quote for your Willow Springs property.
               </p>

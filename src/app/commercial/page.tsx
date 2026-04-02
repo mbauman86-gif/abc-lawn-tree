@@ -207,8 +207,8 @@ export default function CommercialPage() {
             <a href="#estimate" className="bg-accent hover:bg-accent-light text-white px-8 py-4 rounded-lg font-bold text-[17px] transition shadow-lg">
               Request Your Free Audit
             </a>
-            <a href="tel:9196060774" className="border-2 border-white/40 hover:border-white text-white px-8 py-4 rounded-lg font-bold text-[17px] transition bg-transparent">
-              Call (919) 606-0774
+            <a href="tel:9196061130" className="border-2 border-white/40 hover:border-white text-white px-8 py-4 rounded-lg font-bold text-[17px] transition bg-transparent">
+              Call (919) 606-1130
             </a>
           </div>
         </div>

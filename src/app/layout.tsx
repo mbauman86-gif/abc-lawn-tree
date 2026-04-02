@@ -5,7 +5,7 @@ import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
   title: { default: "ABC Lawn & Tree, Inc. — Tree Service & Landscaping | Southern Wake County NC", template: "%s | ABC Lawn & Tree — Willow Springs, NC" },
-  description: "Licensed & insured tree removal, trimming, stump grinding, lawn care, landscaping, hardscape, and irrigation in Fuquay-Varina, Holly Springs, Apex, Garner, Angier, and Willow Springs NC. 25+ years experience. Free estimates — (919) 606-0774.",
+  description: "Licensed & insured tree removal, trimming, stump grinding, lawn care, landscaping, hardscape, and irrigation in Fuquay-Varina, Holly Springs, Apex, Garner, Angier, and Willow Springs NC. 25+ years experience. Free estimates — (919) 606-1130.",
   keywords: ["tree removal","tree trimming","stump grinding","landscaping","lawn care","hardscape","irrigation","Fuquay-Varina","Holly Springs","Apex","Garner","Angier","Willow Springs","Southern Wake County","NC"],
   openGraph: { type: "website", locale: "en_US", siteName: "ABC Lawn & Tree, Inc." },
 };
@@ -15,7 +15,7 @@ const jsonLd = {
   "@type": "LocalBusiness",
   name: "ABC Lawn & Tree, Inc.",
   description: "Professional tree removal, tree trimming, stump grinding, lawn care, landscaping, hardscape, and irrigation services in Southern Wake County, NC.",
-  telephone: "+1-919-606-0774",
+  telephone: "+1-919-606-1130",
   url: "https://abclawnandtree.com",
   address: { "@type": "PostalAddress", addressLocality: "Willow Springs", addressRegion: "NC", postalCode: "27592", addressCountry: "US" },
   geo: { "@type": "GeoCoordinates", latitude: "35.5551", longitude: "-78.6836" },

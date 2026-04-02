@@ -24,7 +24,7 @@ export default function Header() {
         <div className="max-w-6xl mx-auto flex justify-between items-center">
           <span className="hidden sm:inline">Serving Fuquay-Varina · Holly Springs · Apex · Garner · Angier · Willow Springs</span>
           <span className="sm:hidden">Serving Southern Wake County, NC</span>
-          <a href="tel:9196060774" className="font-bold text-accent-light hover:text-white transition">(919) 606-0774</a>
+          <a href="tel:9196061130" className="font-bold text-accent-light hover:text-white transition">(919) 606-1130</a>
         </div>
       </div>
 
@@ -67,9 +67,9 @@ export default function Header() {
 
           {/* Right side */}
           <div className="flex items-center gap-4">
-            <a href="tel:9196060774" className="hidden md:flex items-center gap-1.5 text-white font-bold text-sm">
+            <a href="tel:9196061130" className="hidden md:flex items-center gap-1.5 text-white font-bold text-sm">
               <svg className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
-              (919) 606-0774
+              (919) 606-1130
             </a>
             <Link href="/contact" className="bg-accent hover:bg-accent-light text-white px-5 py-2.5 rounded-lg font-bold text-sm transition shadow-md">
               Free Estimate
@@ -96,7 +96,7 @@ export default function Header() {
               <Link href="/gallery" onClick={() => setOpen(false)} className="block px-3 py-2.5 rounded-md text-white hover:bg-white/10 font-medium transition">Gallery</Link>
               <Link href="/about" onClick={() => setOpen(false)} className="block px-3 py-2.5 rounded-md text-white hover:bg-white/10 font-medium transition">About</Link>
               <Link href="/contact" onClick={() => setOpen(false)} className="block px-3 py-2.5 rounded-md text-white hover:bg-white/10 font-medium transition">Contact</Link>
-              <a href="tel:9196060774" className="block mt-3 text-center bg-accent text-white py-3 rounded-lg font-bold">Call (919) 606-0774</a>
+              <a href="tel:9196061130" className="block mt-3 text-center bg-accent text-white py-3 rounded-lg font-bold">Call (919) 606-1130</a>
             </div>
           </div>
         )}

@@ -179,10 +179,10 @@ export default function TreeRemovalPage() {
               emergency response across Southern Wake County.
             </p>
             <a
-              href="tel:9196060774"
+              href="tel:9196061130"
               className="inline-block bg-emergency hover:bg-red-700 text-white px-8 py-3.5 rounded-lg font-bold text-sm transition shadow-md"
             >
-              Call Now: (919) 606-0774
+              Call Now: (919) 606-1130
             </a>
           </div>
         </div>
@@ -207,10 +207,10 @@ export default function TreeRemovalPage() {
               Request an Estimate
             </a>
             <a
-              href="tel:9196060774"
+              href="tel:9196061130"
               className="border-2 border-primary/20 hover:border-primary/40 text-primary px-7 py-3.5 rounded-lg font-bold text-sm transition"
             >
-              Call (919) 606-0774
+              Call (919) 606-1130
             </a>
           </div>
         </div>

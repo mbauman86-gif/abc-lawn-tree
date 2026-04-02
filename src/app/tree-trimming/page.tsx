@@ -202,10 +202,10 @@ export default function TreeTrimmingPage() {
               Request an Estimate
             </a>
             <a
-              href="tel:9196060774"
+              href="tel:9196061130"
               className="border-2 border-primary/20 hover:border-primary/40 text-primary px-7 py-3.5 rounded-lg font-bold text-sm transition"
             >
-              Call (919) 606-0774
+              Call (919) 606-1130
             </a>
           </div>
         </div>
@@ -231,10 +231,10 @@ export default function TreeTrimmingPage() {
             Most estimates delivered within 24 hours.
           </p>
           <a
-            href="tel:9196060774"
+            href="tel:9196061130"
             className="inline-block bg-white text-accent hover:bg-cream px-8 py-3.5 rounded-lg font-bold text-sm transition shadow-lg"
           >
-            Call (919) 606-0774
+            Call (919) 606-1130
           </a>
         </div>
       </section>
