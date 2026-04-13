@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 50" fill="none">
+  <!-- Compact single-line with phone number - for vehicle doors/tailgates -->
+  <g transform="translate(0, 2)">
+    <!-- Mini tree icon -->
+    <circle cx="20" cy="14" r="11" fill="#6B1D2A"/>
+    <circle cx="12" cy="18" r="7" fill="#6B1D2A"/>
+    <circle cx="28" cy="18" r="7" fill="#6B1D2A"/>
+    <circle cx="20" cy="10" r="7" fill="#8B2E3D"/>
+    <circle cx="15" cy="14" r="5.5" fill="#8B2E3D"/>
+    <circle cx="25" cy="14" r="5.5" fill="#8B2E3D"/>
+    <rect x="18" y="24" width="4" height="12" rx="1" fill="#C8963E"/>
+    <path d="M17 34 Q15 36 12 37" stroke="#C8963E" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+    <path d="M23 34 Q25 36 28 37" stroke="#C8963E" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+    <circle cx="17" cy="11" r="1.5" fill="#C8963E" opacity="0.7"/>
+    <circle cx="24" cy="12" r="1" fill="#C8963E" opacity="0.6"/>
+  </g>
+
+  <!-- ABC LAWN & TREE -->
+  <text x="46" y="22" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="20" font-weight="900" letter-spacing="-0.5" fill="#6B1D2A">ABC</text>
+  <text x="94" y="22" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="14" font-weight="700" letter-spacing="2" fill="#C8963E">LAWN &amp; TREE</text>
+
+  <!-- Phone number -->
+  <text x="46" y="40" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="16" font-weight="800" letter-spacing="1" fill="#6B1D2A">(919) 606-1130</text>
+
+  <!-- Divider dot -->
+  <circle cx="210" y="36" r="2" fill="#C8963E"/>
+
+  <!-- Website -->
+  <text x="220" y="40" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="12" font-weight="600" letter-spacing="1" fill="#5A5A5A">abclawnandtree.com</text>
+</svg>
