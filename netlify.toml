@@ -2,6 +2,25 @@
   command = "npm run build"
   publish = "out"
 
+# Old site URLs that Google still has indexed
+[[redirects]]
+  from = "/Home_Page.html"
+  to = "/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/home_page.html"
+  to = "/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/Home_Page"
+  to = "/"
+  status = 301
+  force = true
+
 [[redirects]]
   from = "/*"
   to = "/404.html"
