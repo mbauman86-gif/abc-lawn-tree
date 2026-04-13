@@ -127,7 +127,7 @@ export default function HomePage() {
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
               { num: "25+", label: "Years in Business", desc: "Family-owned since 1998. We know Southern Wake County\u2019s trees, soil, and seasons." },
-              { num: "4.9", label: "Google Rating", desc: "87+ five-star reviews from homeowners and businesses across the Triangle." },
+              { num: "6", label: "Cities Served", desc: "Fuquay-Varina, Holly Springs, Apex, Garner, Angier, and Willow Springs." },
               { num: "100%", label: "Licensed & Insured", desc: "Full liability and workers\u2019 comp on every job. Your property is always protected." },
               { num: "Free", label: "Estimates", desc: "No-obligation quotes delivered within 24 hours. No surprises. No hidden fees." },
             ].map((stat, i) => (
