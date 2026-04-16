@@ -69,14 +69,10 @@ export default function HomePage() {
 
         {/* HERO TRUST BAR */}
         <div className="absolute bottom-0 left-0 right-0 bg-primary-dark/95 backdrop-blur-sm border-t border-primary-light/40">
-          <div className="max-w-[76rem] mx-auto px-6 py-6 grid grid-cols-2 md:grid-cols-4 gap-6 text-center text-white">
+          <div className="max-w-[76rem] mx-auto px-6 py-6 grid grid-cols-3 gap-6 text-center text-white">
             <div className="flex flex-col items-center">
               <span className="text-3xl font-headline font-black text-accent">25+</span>
               <span className="text-xs font-semibold tracking-widest uppercase text-stone-400">Years Experience</span>
-            </div>
-            <div className="flex flex-col items-center md:border-l border-primary-light/40">
-              <span className="text-3xl font-headline font-black text-accent">4.9&#9733;</span>
-              <span className="text-xs font-semibold tracking-widest uppercase text-stone-400">Google Rating</span>
             </div>
             <div className="flex flex-col items-center md:border-l border-primary-light/40">
               <span className="text-3xl font-headline font-black text-accent">FULLY</span>
@@ -84,7 +80,7 @@ export default function HomePage() {
             </div>
             <div className="flex flex-col items-center md:border-l border-primary-light/40">
               <span className="text-3xl font-headline font-black text-accent">FREE</span>
-              <span className="text-xs font-semibold tracking-widest uppercase text-stone-400">Consultations</span>
+              <span className="text-xs font-semibold tracking-widest uppercase text-stone-400">Estimates</span>
             </div>
           </div>
         </div>
@@ -117,7 +113,7 @@ export default function HomePage() {
             {/* Emergency */}
             <Link href="/emergency-tree-service" className="service-card bg-warm-white rounded-2xl overflow-hidden border-2 border-emergency/25 group block">
               <div className="h-48 relative overflow-hidden">
-                <img src="/images/tree-removal.jpg" alt="Emergency storm response" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+                <img src="/images/emergency.jpg" alt="Emergency storm response" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
                 <div className="absolute inset-0 bg-emergency/20"></div>
                 <div className="absolute top-4 left-4 bg-emergency text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-widest">Priority Response</div>
               </div>
@@ -150,7 +146,7 @@ export default function HomePage() {
             {/* Stump Grinding */}
             <Link href="/stump-grinding" className="service-card bg-warm-white rounded-2xl overflow-hidden border border-border group block">
               <div className="h-48 relative overflow-hidden">
-                <img src="/images/tree-trimming.jpg" alt="Stump grinding" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+                <img src="/images/stump-grinding.jpg" alt="Stump grinding" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
                 <div className="absolute inset-0 bg-primary/20"></div>
               </div>
               <div className="p-8">
