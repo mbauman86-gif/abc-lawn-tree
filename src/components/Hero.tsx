@@ -38,8 +38,10 @@ export default function Hero({
           <div className="absolute inset-0 bg-gradient-to-r from-primary-dark/90 via-primary-dark/60 to-transparent"></div>
         </>
       )}
-      {/* Subtle texture overlay */}
-      <div className="absolute inset-0 opacity-[0.04]" style={{backgroundImage:"url(\"data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M20 20.5V18H0v-2h20v-2H0v-2h20v-2H0V8h20V6H0V4h20V2H0V0h22v20h2V0h2v20h2V0h2v20h2V0h2v20h2V0h2v22H20v-1.5zM0 20h2v20H0V20zm4 0h2v20H4V20zm4 0h2v20H8V20zm4 0h2v20h-2V20zm4 0h2v20h-2V20zm4 0h2v20h-2V20zM0 22v2h20v2H0v2h20v2H0v2h20v2H0v2h20v2H0v2h22V22H0z' fill='%23ffffff' fill-opacity='1'/%3E%3C/svg%3E\")"}} />
+      {/* Subtle texture overlay — only shown when no background photograph */}
+      {!backgroundImage && (
+        <div className="absolute inset-0 opacity-[0.04]" style={{backgroundImage:"url(\"data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M20 20.5V18H0v-2h20v-2H0v-2h20v-2H0V8h20V6H0V4h20V2H0V0h22v20h2V0h2v20h2V0h2v20h2V0h2v20h2V0h2v22H20v-1.5zM0 20h2v20H0V20zm4 0h2v20H4V20zm4 0h2v20H8V20zm4 0h2v20h-2V20zm4 0h2v20h-2V20zm4 0h2v20h-2V20zM0 22v2h20v2H0v2h20v2H0v2h20v2H0v2h20v2H0v2h22V22H0z' fill='%23ffffff' fill-opacity='1'/%3E%3C/svg%3E\")"}} />
+      )}
 
       {/* Gold gradient accent at bottom */}
       <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-accent to-transparent" />
@@ -90,8 +92,8 @@ export default function Hero({
           </div>
         </div>
 
-        {/* Stacked logo mark — desktop only */}
-        {!emergency && (
+        {/* Stacked logo mark — desktop only, hidden when we have a background photo */}
+        {!emergency && !backgroundImage && (
           <div className="hero-reveal opacity-0 translate-y-6 transition-all duration-700 hidden lg:flex items-center justify-center relative">
             {/* Soft radial glow backdrop */}
             <div className="absolute inset-0 -m-8 bg-[radial-gradient(ellipse_at_center,rgba(200,150,62,0.12),transparent_60%)] pointer-events-none" />
