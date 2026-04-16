@@ -26,8 +26,8 @@ export default function Hero({ title, subtitle, emergency = false }: { title: st
       {/* Gold gradient accent at bottom */}
       <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-accent to-transparent" />
 
-      <div className="relative max-w-[76rem] mx-auto px-6 sm:px-10 py-24 md:py-32 lg:py-40 xl:py-48">
-        <div className="max-w-3xl">
+      <div className="relative max-w-[76rem] mx-auto px-6 sm:px-10 py-24 md:py-32 lg:py-36 xl:py-40 grid lg:grid-cols-[1.15fr_1fr] lg:items-center gap-12 xl:gap-20">
+        <div className="max-w-2xl">
           {/* Title */}
           <h1 className="hero-reveal opacity-0 translate-y-6 transition-all duration-700 text-white mb-6 leading-[1.05]">
             {title}
@@ -71,6 +71,20 @@ export default function Hero({ title, subtitle, emergency = false }: { title: st
             ))}
           </div>
         </div>
+
+        {/* Stacked logo mark — desktop only */}
+        {!emergency && (
+          <div className="hero-reveal opacity-0 translate-y-6 transition-all duration-700 hidden lg:flex items-center justify-center relative">
+            {/* Soft radial glow backdrop */}
+            <div className="absolute inset-0 -m-8 bg-[radial-gradient(ellipse_at_center,rgba(200,150,62,0.12),transparent_60%)] pointer-events-none" />
+            <img
+              src="/brand/logo-stacked-cream.png"
+              alt=""
+              aria-hidden="true"
+              className="relative w-72 xl:w-80 h-auto"
+            />
+          </div>
+        )}
       </div>
     </section>
   );

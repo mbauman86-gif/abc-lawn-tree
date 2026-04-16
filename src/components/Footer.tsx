@@ -9,13 +9,11 @@ export default function Footer() {
       <div className="max-w-[76rem] mx-auto px-6 sm:px-10 py-16 lg:py-20">
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-12">
           <div>
-            <div className="flex items-center gap-3 mb-5">
-              <img src="/logo-icon.svg" alt="ABC Lawn & Tree" className="w-10 h-10 rounded-lg" />
-              <div>
-                <div className="font-bold text-lg text-white tracking-tight">ABC Lawn & Tree</div>
-                <div className="text-[10px] text-accent/60 font-semibold tracking-[0.15em] uppercase">Est. 1998</div>
-              </div>
-            </div>
+            <img
+              src="/brand/logo-horizontal-cream.png"
+              alt="ABC Lawn & Tree — Est. 1998"
+              className="h-16 md:h-20 w-auto mb-6"
+            />
             <p className="text-white/60 text-[15px] leading-relaxed mb-6">Family-owned tree care &amp; landscaping serving Southern Wake County for 25+ years. Licensed, insured, and dedicated to excellence.</p>
             <a href="tel:9196061130" className="inline-flex items-center gap-2.5 bg-accent/15 border border-accent/25 rounded-xl px-5 py-3 text-accent font-bold text-lg hover:bg-accent/25 transition">
               <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>

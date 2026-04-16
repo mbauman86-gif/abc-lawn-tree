@@ -30,14 +30,14 @@ export default function Header() {
 
       {/* Main sticky header */}
       <header className="sticky top-0 z-50 bg-primary shadow-lg">
-        <div className="max-w-[76rem] mx-auto px-6 sm:px-10 h-[72px] flex items-center justify-between">
+        <div className="max-w-[76rem] mx-auto px-6 sm:px-10 h-[84px] md:h-[92px] flex items-center justify-between">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-3 flex-shrink-0">
-            <img src="/logo-icon.svg" alt="ABC Lawn & Tree" className="w-11 h-11 rounded-lg" />
-            <div className="leading-tight">
-              <div className="font-bold text-white text-lg tracking-tight">ABC Lawn & Tree</div>
-              <div className="text-[10px] text-accent/70 font-semibold tracking-[0.15em] uppercase">Est. 1998 · Willow Springs, NC</div>
-            </div>
+          <Link href="/" className="flex items-center flex-shrink-0" aria-label="ABC Lawn & Tree — Home">
+            <img
+              src="/brand/logo-horizontal-cream.png"
+              alt="ABC Lawn & Tree — Est. 1998"
+              className="h-14 md:h-16 w-auto"
+            />
           </Link>
 
           {/* Desktop nav */}

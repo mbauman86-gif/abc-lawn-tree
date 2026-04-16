@@ -7,3 +7,14 @@ out/
 
 # Local Netlify folder
 .netlify
+
+# Stitch design mockups (local previews only)
+.stitch/
+
+# Legacy logo concept pages
+public/branding.html
+public/logo-concepts.html
+public/logo-concepts-v2.html
+
+# TypeScript build info
+tsconfig.tsbuildinfo
