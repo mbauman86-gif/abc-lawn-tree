@@ -118,6 +118,7 @@ export default function CommercialPage() {
       <Hero
         title="Commercial Landscape &amp; Tree Services"
         subtitle="Grounds maintenance, tree care, and site improvements for commercial properties across Fuquay-Varina, Holly Springs, Apex, Garner, and Southern Wake County."
+        backgroundImage="/images/commercial.jpg"
       />
       <TrustBar />
 

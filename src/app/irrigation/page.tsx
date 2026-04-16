@@ -64,6 +64,7 @@ export default function IrrigationPage() {
       <Hero
         title="Irrigation Installation &amp; Maintenance"
         subtitle="Professional sprinkler system installation, repair, winterization, and spring startup serving Willow Springs, Fuquay-Varina, Apex, and all of Southern Wake County."
+        backgroundImage="/images/irrigation.jpg"
       />
       <TrustBar />
 

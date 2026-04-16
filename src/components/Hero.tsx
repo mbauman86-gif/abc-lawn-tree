@@ -2,7 +2,17 @@
 import Link from "next/link";
 import { useEffect, useRef } from "react";
 
-export default function Hero({ title, subtitle, emergency = false }: { title: string; subtitle: string; emergency?: boolean }) {
+export default function Hero({
+  title,
+  subtitle,
+  emergency = false,
+  backgroundImage,
+}: {
+  title: string;
+  subtitle: string;
+  emergency?: boolean;
+  backgroundImage?: string;
+}) {
   const sectionRef = useRef<HTMLElement>(null);
 
   useEffect(() => {
@@ -18,8 +28,16 @@ export default function Hero({ title, subtitle, emergency = false }: { title: st
     <section
       ref={sectionRef}
       className={`relative overflow-hidden ${emergency ? "bg-emergency-dark" : ""}`}
-      style={!emergency ? { background: "linear-gradient(135deg, #4A1420 0%, #6B1D2A 40%, #8B2E3D 100%)" } : undefined}
+      style={!emergency && !backgroundImage ? { background: "linear-gradient(135deg, #4A1420 0%, #6B1D2A 40%, #8B2E3D 100%)" } : undefined}
     >
+      {/* Optional full-bleed background photograph */}
+      {backgroundImage && (
+        <>
+          <img src={backgroundImage} alt="" aria-hidden="true" className="absolute inset-0 w-full h-full object-cover" />
+          <div className="absolute inset-0 bg-primary-dark/75"></div>
+          <div className="absolute inset-0 bg-gradient-to-r from-primary-dark/90 via-primary-dark/60 to-transparent"></div>
+        </>
+      )}
       {/* Subtle texture overlay */}
       <div className="absolute inset-0 opacity-[0.04]" style={{backgroundImage:"url(\"data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M20 20.5V18H0v-2h20v-2H0v-2h20v-2H0V8h20V6H0V4h20V2H0V0h22v20h2V0h2v20h2V0h2v20h2V0h2v20h2V0h2v22H20v-1.5zM0 20h2v20H0V20zm4 0h2v20H4V20zm4 0h2v20H8V20zm4 0h2v20h-2V20zm4 0h2v20h-2V20zm4 0h2v20h-2V20zM0 22v2h20v2H0v2h20v2H0v2h20v2H0v2h20v2H0v2h22V22H0z' fill='%23ffffff' fill-opacity='1'/%3E%3C/svg%3E\")"}} />
 

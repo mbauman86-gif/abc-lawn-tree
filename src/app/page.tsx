@@ -32,7 +32,7 @@ export default function HomePage() {
           <img
             alt="Professional tree service crew removing a large oak"
             className="w-full h-full object-cover"
-            src="/images/tree-removal.jpg"
+            src="/images/hero.jpg"
           />
           <div className="absolute inset-0 bg-primary-dark/75"></div>
           <div className="absolute inset-0 bg-gradient-to-r from-primary-dark/90 via-primary-dark/60 to-transparent"></div>

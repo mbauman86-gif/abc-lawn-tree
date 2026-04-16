@@ -82,6 +82,7 @@ export default function HardscapePage() {
       <Hero
         title="Hardscape &amp; Outdoor Living"
         subtitle="Patio pavers, retaining walls, fire pits, outdoor kitchens, and more for homes across Apex, Willow Springs, and Southern Wake County."
+        backgroundImage="/images/hardscape.jpg"
       />
       <TrustBar />
 
