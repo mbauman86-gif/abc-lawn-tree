@@ -1,7 +1,8 @@
 @import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Domine:wght@400;700;800;900&family=Montserrat:wght@400;500;600;700&family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap');
 
 @theme {
-  /* Maroon & Gold palette */
+  /* Maroon & Gold palette — original names */
   --color-primary: #6B1D2A;
   --color-primary-light: #8B2E3D;
   --color-primary-dark: #4A1420;
@@ -22,6 +23,36 @@
   --color-border-input: #D4CBC0;
   --color-muted: #8A8278;
   --color-gold-pale: #F5E6C8;
+
+  /* Stitch-style aliases so ported HTML classes resolve */
+  --color-maroon: #6B1D2A;
+  --color-maroon-light: #8B2E3D;
+  --color-maroon-dark: #4A1420;
+  --color-gold: #C8963E;
+  --color-gold-light: #DAB060;
+  --color-emergency-red: #C41E1E;
+  --color-sand: #E8E0D4;
+
+  /* Fonts */
+  --font-headline: 'Domine', 'Georgia', serif;
+  --font-serif: 'Domine', 'Georgia', serif;
+  --font-body: 'Montserrat', system-ui, sans-serif;
+  --font-sans: 'Montserrat', system-ui, sans-serif;
+}
+
+.material-symbols-outlined {
+  font-family: 'Material Symbols Outlined';
+  font-weight: normal;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-feature-settings: 'liga';
+  -webkit-font-smoothing: antialiased;
 }
 
 html { scroll-behavior: smooth; }
