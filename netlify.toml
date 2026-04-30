@@ -2,6 +2,16 @@
   command = "npm run build"
   publish = "out"
 
+# abcsalutes.com — veteran program domain.
+# Root rewrites to /veterans content while the URL stays as abcsalutes.com.
+# Other paths under abcsalutes.com serve normally (same Netlify site).
+[[redirects]]
+  from = "/"
+  to = "/veterans"
+  status = 200
+  force = true
+  conditions = {Host = ["abcsalutes.com", "www.abcsalutes.com"]}
+
 # Old site URLs that Google still has indexed
 [[redirects]]
   from = "/Home_Page.html"
