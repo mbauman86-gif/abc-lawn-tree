@@ -24,13 +24,13 @@ const cast = [
     name: "Colin Pemberton",
     role: "Founder · Owner",
     blurb:
-      "Started ABC Lawn & Tree in 1998 with a truck, a mower, and a chainsaw. Self-proclaimed Lawn Dog. Comes from a military family. Said for years he wanted to do free tree work for veterans — and that wish is now ABC Salutes.",
+      "Started ABC Lawn & Tree in 1998 with a truck, a mower, and a chainsaw. Self-proclaimed Lawn Dog. Comes from a military family. Said for years he wanted to do something to give back to the vets — and that wish is now ABC Salutes.",
   },
   {
     name: "CJ Pemberton",
-    role: "Marketing & Ops · Colin's Son",
+    role: "Marketing · Colin's Son",
     blurb:
-      "Took a different professional path than Dad — but came home for the rebuild. Runs marketing, ops, and the cameras that document the work.",
+      "Took a different professional path than Dad — but came home for the rebuild. Runs the marketing and the strategic thinking that keeps every campaign tied to what the crew can actually deliver on the ground.",
   },
 ];
 
@@ -85,20 +85,19 @@ export default function AboutPage() {
             <p>
               For over two decades, Colin said the same thing to anyone who&apos;d
               listen:{" "}
-              <em>
-                &ldquo;I&apos;ve always wanted to do free tree work for the
-                vets.&rdquo;
-              </em>{" "}
+              <em>&ldquo;I want to do something to give back to the vets.&rdquo;</em>{" "}
               He never had the systems to make it happen. The work was steady,
               the equipment was old, and there was always one more job to get
               to.
             </p>
             <p>
               Today ABC is in a new chapter. Colin&apos;s still on the trucks
-              cutting trees, and his son CJ is running marketing and ops.
-              They&apos;ve narrowed the focus to what they do best — tree work
-              across Southern Wake County — and they&apos;re finally building
-              the systems to deliver Colin&apos;s longtime mission.
+              cutting trees, and his son CJ runs the marketing — and the
+              strategic thinking that keeps every campaign tied to what the
+              crew can actually deliver. They&apos;ve narrowed the focus to what
+              they do best: tree work across Southern Wake County. And
+              they&apos;re finally building the systems to deliver on
+              Colin&apos;s longtime wish.
             </p>
             <p>
               That mission is now its own program: <strong>ABC Salutes</strong>{" "}

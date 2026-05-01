@@ -23,7 +23,7 @@ export default function VeteransPage() {
               ABC Lawn &amp; Tree was started in 1998 by Colin Pemberton — a
               self-proclaimed Lawn Dog from a military family. For over two
               decades he said the same thing to anyone who&apos;d listen:{" "}
-              <em>&ldquo;I&apos;ve always wanted to do free work for the
+              <em>&ldquo;I want to do something to give back to the
               vets.&rdquo;</em> He never had the systems to make it happen.
             </p>
             <p className="text-lg md:text-xl text-charcoal leading-relaxed mt-4">
@@ -141,8 +141,9 @@ export default function VeteransPage() {
               Ashlee Bauman and son-in-law Michael Bauman. After exiting a $10M+
               landscape company they built together in 2024, Ashlee and Michael
               decided their next chapter would be honoring Colin&apos;s
-              long-standing wish — building the systems, the funding, and the
-              outreach to finally make free tree service for veterans real.
+              long-standing wish to give back to the veteran community —
+              building the systems, the funding, and the outreach to make it
+              real.
             </p>
             <p className="text-charcoal leading-relaxed mb-4">
               <strong>ABC Salutes</strong> is the charitable program. It selects
