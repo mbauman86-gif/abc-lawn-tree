@@ -131,21 +131,29 @@ export default function VeteransPage() {
             what we can free of charge and offer a meaningful discount on the rest.
           </p>
 
-          {/* Why */}
+          {/* Who Runs ABC Salutes */}
           <div className="border-t border-border pt-12">
             <h2 className="font-serif text-2xl md:text-3xl font-bold text-primary mb-4">
-              Why we do this
+              Who runs ABC Salutes
             </h2>
             <p className="text-charcoal leading-relaxed mb-4">
-              ABC Lawn &amp; Tree is family-owned. We&apos;ve been doing this work in
-              Southern Wake County for 25+ years. We&apos;ve seen what happens when a tree
-              falls on someone&apos;s roof and they can&apos;t afford the removal — and
-              we&apos;ve seen who gets hit hardest: older veterans on fixed incomes who
-              served, came home, and never asked anyone for help.
+              ABC Salutes is the passion project of Colin Pemberton&apos;s daughter
+              Ashlee Bauman and son-in-law Michael Bauman. After exiting a $10M+
+              landscape company they built together in 2024, Ashlee and Michael
+              decided their next chapter would be honoring Colin&apos;s
+              long-standing wish — building the systems, the funding, and the
+              outreach to finally make free tree service for veterans real.
+            </p>
+            <p className="text-charcoal leading-relaxed mb-4">
+              <strong>ABC Salutes</strong> is the charitable program. It selects
+              the veterans, manages the applications, and funds the work.{" "}
+              <strong>ABC Lawn &amp; Tree</strong> (Colin&apos;s tree-service
+              company) provides the labor — same crew, same standards as a paid
+              job, free for the veteran. Together they deliver one free hazardous
+              tree removal every week.
             </p>
             <p className="text-charcoal leading-relaxed">
-              This is our small thank-you. If you served, or you know someone who did,
-              get in touch.
+              If you served — or you know someone who did — get in touch.
             </p>
           </div>
         </div>

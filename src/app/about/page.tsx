@@ -22,21 +22,9 @@ const stats = [
 const cast = [
   {
     name: "Colin Pemberton",
-    role: "Founder · Lawn Dog",
+    role: "Founder · Owner",
     blurb:
-      "Started ABC in 1998 with a truck, a mower, and a chainsaw. Self-proclaimed Lawn Dog. Comes from a military family. Said for years he wanted to do free work for veterans — now we're making it real.",
-  },
-  {
-    name: "Michael Bauman",
-    role: "CEO · Son-in-Law",
-    blurb:
-      "Married Colin's daughter Ashlee. Built and exited a $10M+ landscape company in 2024. Now bringing systems, mission, and marketing to ABC's rebuild.",
-  },
-  {
-    name: "Ashlee Bauman",
-    role: "CFO · Colin's Daughter",
-    blurb:
-      "Pemberton by birth, Bauman by marriage. Provided the financial discipline that took our last company to a clean exit. Same role at ABC — make sure the rebuild adds up.",
+      "Started ABC Lawn & Tree in 1998 with a truck, a mower, and a chainsaw. Self-proclaimed Lawn Dog. Comes from a military family. Said for years he wanted to do free tree work for veterans — and that wish is now ABC Salutes.",
   },
   {
     name: "CJ Pemberton",
@@ -60,9 +48,9 @@ const values = [
     icon: "M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z",
   },
   {
-    title: "Family Crew",
+    title: "Family Run",
     description:
-      "When you call ABC, you&apos;re calling the family. Founder, CEO, CFO, and marketing head — all under one roof. No call centers. No subcontracted crews.",
+      "ABC is owned and operated by Colin Pemberton, with his son CJ running marketing and ops. When you call ABC, you&apos;re calling the family. No call centers. No subcontracted crews.",
     icon: "M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25",
   },
 ];
@@ -98,7 +86,7 @@ export default function AboutPage() {
               For over two decades, Colin said the same thing to anyone who&apos;d
               listen:{" "}
               <em>
-                &ldquo;I&apos;ve always wanted to do free work for the
+                &ldquo;I&apos;ve always wanted to do free tree work for the
                 vets.&rdquo;
               </em>{" "}
               He never had the systems to make it happen. The work was steady,
@@ -106,24 +94,23 @@ export default function AboutPage() {
               to.
             </p>
             <p>
-              In 2024, his daughter Ashlee and son-in-law Michael Bauman closed a
-              clean exit on the $10M+ landscape company they&apos;d built
-              together over a decade. Around the same time, Colin&apos;s book of
-              recurring lawn work was winding down. The conversation came up at a
-              family dinner: <em>what if we rebuild ABC the right way — and we
-              start by finally doing what Dad always wanted?</em>
+              Today ABC is in a new chapter. Colin&apos;s still on the trucks
+              cutting trees, and his son CJ is running marketing and ops.
+              They&apos;ve narrowed the focus to what they do best — tree work
+              across Southern Wake County — and they&apos;re finally building
+              the systems to deliver Colin&apos;s longtime mission.
             </p>
             <p>
-              That&apos;s ABC Lawn &amp; Tree today. Same founder, same hands,
-              same heart. New systems, new chapter, new mission. Colin&apos;s son
-              CJ stepped in to run marketing and ops. Ashlee runs the books.
-              Michael runs the company. And every single week, one Wake County
-              veteran gets a free hazardous tree job — no catch, no fine print,
-              built into the business.
+              That mission is now its own program: <strong>ABC Salutes</strong>{" "}
+              — every week, one Wake County veteran gets a free hazardous tree
+              job. ABC Salutes is led by Colin&apos;s daughter Ashlee Bauman
+              and son-in-law Michael Bauman as their passion project. ABC Lawn
+              &amp; Tree provides the labor, ABC Salutes runs the program.
+              Same family. Same heart. Better systems.
             </p>
             <p className="font-bold text-charcoal">
-              The work is the same as it&apos;s always been. The mission is what
-              we should&apos;ve been doing from day one.
+              The work is what it&apos;s always been. The mission is what we
+              should&apos;ve been doing from day one.
             </p>
           </div>
         </div>
@@ -140,7 +127,7 @@ export default function AboutPage() {
               Four people. One family. One company.
             </p>
           </div>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid sm:grid-cols-2 gap-6 max-w-3xl mx-auto">
             {cast.map((person) => (
               <div
                 key={person.name}
