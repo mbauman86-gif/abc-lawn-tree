@@ -20,15 +20,18 @@ export default function VeteransPage() {
         <div className="max-w-4xl mx-auto px-6">
           <div className="mb-12">
             <p className="text-lg md:text-xl text-charcoal leading-relaxed">
-              We&apos;ve been cutting trees in Southern Wake County for 25 years. We&apos;ve
-              also lost count of the calls we&apos;ve taken from elderly veterans, widows
-              of veterans, and disabled vets who couldn&apos;t afford to take down a tree
-              threatening their home.
+              ABC Lawn &amp; Tree was started in 1998 by Colin Pemberton — a
+              self-proclaimed Lawn Dog from a military family. For over two
+              decades he said the same thing to anyone who&apos;d listen:{" "}
+              <em>&ldquo;I&apos;ve always wanted to do free work for the
+              vets.&rdquo;</em> He never had the systems to make it happen.
             </p>
             <p className="text-lg md:text-xl text-charcoal leading-relaxed mt-4">
-              <strong>So we&apos;re doing something about it.</strong> Every week, ABC Lawn
-              &amp; Tree will remove one hazardous tree free of charge for a Wake County
-              veteran. No catch. No upsell. No fine print.
+              <strong>So his family stepped in to build them.</strong> Every
+              week, ABC Lawn &amp; Tree removes one hazardous tree free of
+              charge for a Wake County veteran or surviving spouse. No catch.
+              No upsell. No fine print. The mission Colin always wanted —
+              finally built into the business.
             </p>
           </div>
 

@@ -2,23 +2,57 @@ import type { Metadata } from "next";
 import Hero from "@/components/Hero";
 import TrustBar from "@/components/TrustBar";
 import EstimateForm from "@/components/EstimateForm";
+import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "About ABC Lawn & Tree — Family-Owned Tree Service in Willow Springs, NC",
+  title: "About ABC Lawn & Tree — Our Family, Our Rebuild, Our Mission",
   description:
-    "Learn about ABC Lawn & Tree, a family-owned and operated tree service and landscaping company based in Willow Springs, NC. Over 25 years of experience serving Southern Wake County. Licensed, insured, and committed to quality.",
+    "ABC Lawn & Tree was founded in 1998 by Colin Pemberton — a self-proclaimed Lawn Dog from a military family. Now his family is rebuilding it around a single mission: free service for veterans every week.",
   keywords:
-    "about ABC Lawn Tree Willow Springs NC, family owned tree service Wake County, licensed insured tree company NC",
+    "ABC Lawn Tree story, family owned tree service Wake County, Colin Pemberton founder, Willow Springs NC tree service",
 };
 
 const stats = [
-  { value: "25+", label: "Years in Business" },
-  { value: "Family", label: "Owned & Operated" },
-  { value: "Local", label: "Willow Springs Based" },
-  { value: "100%", label: "Licensed & Insured" },
+  { value: "1998", label: "Founded" },
+  { value: "Family", label: "Owned & Run" },
+  { value: "1/Week", label: "Free Vet Service" },
+  { value: "Wake Co.", label: "Southern NC" },
+];
+
+const cast = [
+  {
+    name: "Colin Pemberton",
+    role: "Founder · Lawn Dog",
+    blurb:
+      "Started ABC in 1998 with a truck, a mower, and a chainsaw. Self-proclaimed Lawn Dog. Comes from a military family. Said for years he wanted to do free work for veterans — now we're making it real.",
+  },
+  {
+    name: "Michael Bauman",
+    role: "CEO · Son-in-Law",
+    blurb:
+      "Married Colin's daughter Ashlee. Built and exited a $10M+ landscape company in 2024. Now bringing systems, mission, and marketing to ABC's rebuild.",
+  },
+  {
+    name: "Ashlee Bauman",
+    role: "CFO · Colin's Daughter",
+    blurb:
+      "Pemberton by birth, Bauman by marriage. Provided the financial discipline that took our last company to a clean exit. Same role at ABC — make sure the rebuild adds up.",
+  },
+  {
+    name: "CJ Pemberton",
+    role: "Marketing & Ops · Colin's Son",
+    blurb:
+      "Took a different professional path than Dad — but came home for the rebuild. Runs marketing, ops, and the cameras that document the work.",
+  },
 ];
 
 const values = [
+  {
+    title: "Mission First",
+    description:
+      "Every week, ABC takes down one dangerous tree free of charge for a Wake County veteran. Built into the business, not bolted on.",
+    icon: "M9 12.75L11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 01-1.043 3.296 3.745 3.745 0 01-3.296 1.043A3.745 3.745 0 0112 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 01-3.296-1.043 3.745 3.745 0 01-1.043-3.296A3.745 3.745 0 013 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 011.043-3.296 3.746 3.746 0 013.296-1.043A3.746 3.746 0 0112 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 013.296 1.043 3.746 3.746 0 011.043 3.296A3.745 3.745 0 0121 12z",
+  },
   {
     title: "Licensed & Insured",
     description:
@@ -26,15 +60,9 @@ const values = [
     icon: "M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z",
   },
   {
-    title: "Safety First",
+    title: "Family Crew",
     description:
-      "Every team member is trained in proper rigging, climbing, and equipment operation. We follow ANSI A300 standards for tree care and never cut corners.",
-    icon: "M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126z",
-  },
-  {
-    title: "Community Commitment",
-    description:
-      "We live and work in Southern Wake County. Supporting our neighbors, sponsoring local teams, and keeping our community beautiful is part of who we are.",
+      "When you call ABC, you&apos;re calling the family. Founder, CEO, CFO, and marketing head — all under one roof. No call centers. No subcontracted crews.",
     icon: "M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25",
   },
 ];
@@ -43,14 +71,14 @@ export default function AboutPage() {
   return (
     <>
       <Hero
-        title="About ABC Lawn &amp; Tree"
-        subtitle="Family-owned. Willow Springs based. Serving Southern Wake County since 1998."
+        title="A Family Business. A New Chapter."
+        subtitle="ABC Lawn & Tree was founded in 1998 by Colin Pemberton — a Lawn Dog from a military family. Now we&apos;re rebuilding it around a mission he had from day one."
       />
       <TrustBar />
 
       {/* Story Section */}
       <section className="py-16 md:py-20">
-        <div className="max-w-4xl mx-auto px-6">
+        <div className="max-w-3xl mx-auto px-6">
           <div className="text-center mb-10">
             <h2 className="text-3xl md:text-4xl font-bold text-charcoal mb-4">
               Our Story
@@ -59,29 +87,76 @@ export default function AboutPage() {
           </div>
           <div className="prose prose-lg max-w-none text-charcoal-light leading-relaxed space-y-5">
             <p>
-              ABC Lawn &amp; Tree started back in 1998 with a truck, a
-              chainsaw, and a simple promise: do honest work at a fair price. What
-              began as a one-man tree service out of Willow Springs, NC has grown
-              into a full-service tree care and landscaping company — but we&apos;ve
-              never lost that small-business mindset.
+              ABC Lawn &amp; Tree was started in 1998 by Colin Pemberton — a
+              self-proclaimed &ldquo;Lawn Dog&rdquo; from a military family
+              who&apos;d rather be cutting grass and trimming trees than punching
+              a clock. He bought what he could afford, ran it till the wheels
+              fell off, and built a reputation in Willow Springs the only way he
+              knew how: hard work, honest pricing, and showing up.
             </p>
             <p>
-              We&apos;re still family-owned and operated. That means when you call
-              ABC Lawn &amp; Tree, you&apos;re not talking to a call center —
-              you&apos;re talking to the people who actually show up and do the
-              work. We take pride in every tree we trim, every stump we grind,
-              and every landscape we install because our name is on the truck.
+              For over two decades, Colin said the same thing to anyone who&apos;d
+              listen:{" "}
+              <em>
+                &ldquo;I&apos;ve always wanted to do free work for the
+                vets.&rdquo;
+              </em>{" "}
+              He never had the systems to make it happen. The work was steady,
+              the equipment was old, and there was always one more job to get
+              to.
             </p>
             <p>
-              Over the years, we&apos;ve expanded from tree removal and trimming
-              into lawn maintenance, landscape design, hardscape construction,
-              and irrigation systems. Our crew has grown, our equipment has
-              gotten bigger, and our reputation has spread across Southern Wake
-              County — from Fuquay-Varina and Holly Springs to Apex, Garner,
-              and Angier. But the promise hasn&apos;t changed: show up on time,
-              do it right, clean up when we&apos;re done, and charge a fair
-              price.
+              In 2024, his daughter Ashlee and son-in-law Michael Bauman closed a
+              clean exit on the $10M+ landscape company they&apos;d built
+              together over a decade. Around the same time, Colin&apos;s book of
+              recurring lawn work was winding down. The conversation came up at a
+              family dinner: <em>what if we rebuild ABC the right way — and we
+              start by finally doing what Dad always wanted?</em>
             </p>
+            <p>
+              That&apos;s ABC Lawn &amp; Tree today. Same founder, same hands,
+              same heart. New systems, new chapter, new mission. Colin&apos;s son
+              CJ stepped in to run marketing and ops. Ashlee runs the books.
+              Michael runs the company. And every single week, one Wake County
+              veteran gets a free hazardous tree job — no catch, no fine print,
+              built into the business.
+            </p>
+            <p className="font-bold text-charcoal">
+              The work is the same as it&apos;s always been. The mission is what
+              we should&apos;ve been doing from day one.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Meet the Family */}
+      <section className="py-16 md:py-20 bg-cream">
+        <div className="max-w-5xl mx-auto px-6">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-charcoal mb-4">
+              Meet the Family
+            </h2>
+            <p className="text-charcoal-light max-w-2xl mx-auto">
+              Four people. One family. One company.
+            </p>
+          </div>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            {cast.map((person) => (
+              <div
+                key={person.name}
+                className="bg-white rounded-xl p-6 shadow-sm border border-border"
+              >
+                <h3 className="text-lg font-bold text-charcoal mb-1">
+                  {person.name}
+                </h3>
+                <div className="text-sm font-semibold text-primary uppercase tracking-wide mb-3">
+                  {person.role}
+                </div>
+                <p className="text-charcoal-light text-[14px] leading-relaxed">
+                  {person.blurb}
+                </p>
+              </div>
+            ))}
           </div>
         </div>
       </section>
@@ -104,8 +179,25 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Spacer */}
-      <section className="py-4" />
+      {/* ABC Salutes Callout */}
+      <section className="py-16 md:py-20">
+        <div className="max-w-3xl mx-auto px-6 text-center">
+          <h2 className="text-3xl md:text-4xl font-bold text-charcoal mb-4">
+            ABC Salutes
+          </h2>
+          <p className="text-lg text-charcoal-light leading-relaxed mb-8">
+            Free hazardous tree removal for Wake County veterans — every week,
+            no catch. The mission Colin always wanted, finally built into the
+            business.
+          </p>
+          <Link
+            href="/veterans"
+            className="inline-block bg-primary text-cream font-bold uppercase tracking-wide px-8 py-4 rounded-full hover:bg-primary-dark transition"
+          >
+            Learn About ABC Salutes
+          </Link>
+        </div>
+      </section>
 
       {/* Values & Credentials */}
       <section className="py-16 md:py-20 bg-cream">
@@ -115,8 +207,8 @@ export default function AboutPage() {
               What Sets Us Apart
             </h2>
             <p className="text-charcoal-light max-w-2xl mx-auto">
-              Choosing a tree service or landscaper is a big decision. Here&apos;s
-              why Southern Wake County homeowners trust ABC Lawn &amp; Tree.
+              Choosing a tree service or lawn-care company is a real decision.
+              Here&apos;s why Wake County homeowners trust ABC Lawn &amp; Tree.
             </p>
           </div>
           <div className="grid md:grid-cols-3 gap-8">
